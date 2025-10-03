@@ -2,7 +2,6 @@ import sys
 from bank_account import BankAccount
 
 def main():
-    # Default initial balance is 0, but can be set via command line
     initial_balance = 0
     if len(sys.argv) > 1:
         try:
