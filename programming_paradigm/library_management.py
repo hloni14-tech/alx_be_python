@@ -17,7 +17,7 @@ class Library:
     def return_book(self, title):
         for book in self._books:
             if book.title == title and not book.is_available():
-                return book.return_book()
+                return book.return_book(self), True
         return False
 
     def list_available_books(self):
@@ -26,3 +26,4 @@ class Library:
             print(f"Title: {book.title}, Author: {book.author}")
         if not available:
             print("No available books.")
+
