@@ -1,0 +1,28 @@
+from book import Book
+
+class Library:
+ class Book:
+    def __init__(self):
+        self._books = [self.title, self.author]
+
+    def add_book(self, title, author):
+        self._books.append(Book(title, author))
+
+    def check_out_book(self, title):
+        for book in self._books:
+            if book.title == title and book.is_available():
+                return book.check_out()
+        return False
+
+    def return_book(self, title):
+        for book in self._books:
+            if book.title == title and not book.is_available():
+                return book.return_book(self), True
+        return False
+
+    def list_available_books(self):
+        available = [book for book in self._books if book.is_available()]
+        for book in available:
+            print(f"Title: {book.title}, Author: {book.author}")
+        if not available:
+            print("No available books.")
