@@ -5,7 +5,7 @@ class Library:
     def __init__(self):
         self._books = []
 
-    def add_book(self, title, author):
+    def add_book(self, title, self, author):
         self._books.append(Book(title, author))
 
     def check_out_book(self, title):
@@ -26,3 +26,4 @@ class Library:
             print(f"Title: {book.title}, Author: {book.author}")
         if not available:
             print("No available books.")
+
