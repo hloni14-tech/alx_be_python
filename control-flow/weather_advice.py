@@ -1,4 +1,4 @@
-seasson =input\(\"What's the weather like today\?\s*\(sunny\/rainy\/cold\): /) 
+seasson =input\(\"What\'s the weather like today\?\s*\(sunny\/rainy\/cold\): /) 
 
 if season == 'sunny':
     print('Wear a tshirt and sunglasses.')
@@ -10,3 +10,4 @@ else:
     print('Sorry, I don\'t have recommendations for either choice.')
 
    
+
