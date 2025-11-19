@@ -1,13 +1,13 @@
 season = input("What's the weather like today? (sunny/rainy/cold): ")
 
-if season == 'sunny':
-    print('Wear a tshirt and sunglasses.')
-elif season == 'rainy':
-    print('Don\'t forget your umbrella and raincoat.')
-elif season == 'cold':
-    print('Make sure to wear a warm jacket and gloves.')
-else:
-    print('Sorry, I don\'t have recommendations for either choice.')
+if weather == "sunny": 
+    print("Wear a t-shirt and sunglasses.")
+elif weather == "rainy": 
+    print("Don't forget your umbrella and raincoat.")
+elif weather == "cold": 
+    print("Make sure to wear a warm jacket and gloves.")
+else: 
+    print("Sorry, I don't have recommendations for that choice.")
 
 
 
